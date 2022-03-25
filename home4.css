@@ -1,0 +1,155 @@
+/* The common Nav part start*/
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+
+}
+nav{
+    width: 100%;
+    height: 75px;
+    border-bottom: 3px solid black;
+    line-height: 73px;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+nav .logo{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+nav .logo h1{
+    float: left;
+    color: chocolate;
+    text-transform: uppercase;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li a{
+    
+    color: chocolate;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding:0px 22px;
+}
+nav ul li a:hover{
+    color: white;
+    background-color: black;
+    display: block;
+    
+}
+nav ul li .act{
+    color: black;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+@media (max-width: 1000px){
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: 0.5rem 1rem;
+    }
+    .navbar-links.act{
+        display: flex;
+    }
+}
+/* The common Nav part end*/
+
+
+/* Home 4  part starts*/
+
+
+.holdingcontainer{
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    box-sizing: border-box;
+    flex-direction: row;
+    padding-top: 122px;
+    
+
+}
+.internalcontainerl{
+    flex: 1;
+    background: black;
+    padding: 30px;
+    font-size: 30px;
+    color: white;
+    margin: 3px;
+    text-align: center;
+    border: 2px solid white;
+}
+.internalcontainerm{
+    flex: 1;
+    background-color: white;
+    color: black;
+    padding: 30px;
+    font-size: 30px;
+    margin: 3px;
+    text-align: center;
+    border: 2px solid black;
+}
+.internalcontainerr{
+    flex: 1;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    font-size: 30px;
+    margin: 3px;
+    text-align: center;
+    border: 2px solid white;
+}
+@media screen and (max-width: 1000px){
+    .holdingcontainer{
+        flex-direction: column;
+    }
+
+}
+
+
+/* Home 4 part ends*/
